@@ -45,3 +45,6 @@ p {
  border-color: #ffdde5;
 }
 
+.answer {
+  float: right;
+}
