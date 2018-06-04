@@ -45,6 +45,13 @@ p {
  border-color: #ffdde5;
 }
 
+.question {
+ 
+  margin-bottom: 25px;
+}
+
 .answer {
   float: right;
+  margin-right: 300px;
+  
 }
