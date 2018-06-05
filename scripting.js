@@ -1,7 +1,35 @@
 function myFunction() {
-  var firstname1 = document.getElementById("output").innerHTML = document.getElementById("firstName1").value;
-  var lastname1 = document.getElementById("output").innerHTML = document.getElementById("lastName1").value;
-  var kinderen1 = document.getElementById("output").innerHTML = document.getElementById("Kinderen1").value;
-  var zelforg1 = document.getElementById("output").innerHTML = document.getElementById("zelfOrg1").value;
-  var anderorg1 = document.getElementById("output").innerHTML = document.getElementById("anderOrg1").value;
+  function persoon(naam, kinderen, leeftijd){
+    this.naam = naam;
+    this.kinderen = kinderen;
+    this.leeftijd = leeftijd;
+}
+var kandidaten = [];
+
+var zelf = new persoon("Emiel", "Ja",15);
+  
+kandidaten.push(new persoon("henk","Ja",20));
+kandidaten.push(new persoon("Jan","Nee", 19));
+kandidaten.push(new persoon("Eva","Ja",22));
+kandidaten.push(new persoon("Julie","Nee",23));
+  
+var scores = [];
+  
+for(i = 0; i < kandidaten.length;i++){
+  var punten = 0;
+  if(zelf.kinderen == kandidaten[i].kinderen){
+    punten += 10;
+  }
+  scores.push(punten); 
+}  
+var max = 0;
+var plek = 0;
+
+for(i = 0; i < scores.length ;i++){
+  if(scores[i] > max){
+   max = scores[i];
+   plek = i;
+  }
+}  
+  document.getElementById("output") = kandidaten[plek].naam;
 }
