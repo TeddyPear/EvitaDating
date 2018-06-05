@@ -5,7 +5,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
       <title>Evita</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -44,56 +43,68 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <h1>Persoon 1</h1>
+            <div id="formcontainer">
             <form>
-               <div class="form-inline">
+              <div class="form-inline">
                   <label for="exampleInputEmail1">Voornaam:</label>
                   <input type="text" class="form-control" id="firstName1" >
                   <label for="exampleInputPassword1">Achternaam:</label>
                   <input type="text" class="form-control" id="lastName1" >
                </div>
+               <div id="questions">
                <br>
                <label for="sel1" id="firstquest" class="question">Zou u kinderen willen?</label>
-               <select class="form-control answer" id="Kinderen1" style="width: 80px;">
+
+               <br>
+               <label for="sel1" class="question">Beschouwt u zichelf als een georganiseerd persoon?</label>
+
+               <br>
+               <label for="sel1" class="question">Wil u dat uw partner georganiseerd is ?</label>
+              
+              <br>
+               <label for="sel1" class="question">Bent u sportief?</label>
+
+               <br>
+               <label for="sel1" class="question">Op wat voor soort vakanties zou je eerder gaan?</label>
+               
+              <br>
+               <label for="sel1" class="question">Bent u sportief?</label>
+               
+              </div>
+              <div id="answers">
+                  <select class="form-control answer" id="Kinderen1" style="width: 80px;">
                   <option>Ja</option>
                   <option>Nee</option>
                </select>
-               <br>
-               <label for="sel1" class="question">Beschouwt u zichelf als een georganiseerd persoon?</label>
                <select class="form-control answer" id="zelfOrg1" style="width: 80px;">
                   <option>Ja</option>
                   <option>Nee</option>
                </select>
-               <br>
-               <label for="sel1" class="question">Wil u dat uw partner georganiseerd is ?</label>
-               <select class="form-control answer" id="anderOrg1" style="width: 80px;">
+                <select class="form-control answer" id="anderOrg1" style="width: 80px;">
                   <option>Ja</option>
                   <option>Nee</option>
                </select>
-              <br>
-               <label for="sel1" class="question">Bent u sportief?</label>
                <select class="form-control answer" id="zelfsport1" style="width: 80px;">
                   <option>Ja</option>
                   <option>Nee</option>
                </select>
-               <br>
-               <label for="sel1" class="question">Op wat voor soort vakanties zou je eerder gaan?</label>
-               <select class="form-control answer" id="zelfsport1" style="max-width: 220px; margin-right:1010px;">
+               <select class="form-control answer" id="zelfsport1" style="max-width: 220px; margin-right:10px;">
                   <option>Strandvakantie</option>
                   <option>Een cruise langs de fjorden</option>
                   <option>Bergtochten maken </option>
                </select>
-              <br>
-               <label for="sel1" class="question">Bent u sportief?</label>
                <select class="form-control answer" id="zelfsport1" style="width: 80px;">
                   <option>Ja</option>
                   <option>Nee</option>
                </select>
-
+              </div>
             </form>
             <br>
+           </div>
             <button type="button" class="btn btn-default" onclick="myFunction();">Klaar</button>
             <p id ="output"></p>
-         </div>
+         
+         </div> 
          <div class="col-sm-2 ding" style="background-color: #ffb5bb; padding:5px;">
             <a data-height="2000px" class="twitter-timeline" href="https://twitter.com/selfhelp_tweets?ref_src=twsrc%5Etfw">Tweets by POTUS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
          </div>
