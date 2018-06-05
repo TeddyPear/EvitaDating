@@ -45,13 +45,32 @@ p {
  border-color: #ffdde5;
 }
 
+#questions {
+  float: left;
+  /background-color: white;
+  margin-top: 15px;
+}
+
+#answers {
+  float: left;
+  /background-color: grey;
+  margin-top: 20px;
+}
+
 .question {
- 
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .answer {
-  float: right;
-  margin-right: 1150px;
-  
+ height: 34px;
+ margin-bottom: 3px;
 }
+
+#formcontainer {
+  background-color: #ffc5ce;
+  height: 500px;
+}
+
+
+
+
