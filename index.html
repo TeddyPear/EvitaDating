@@ -5,11 +5,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">  
       <title>Evita</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </head>
    <body>
+   <script src="scripting.js"></script>
       <nav class="navbar navbar-default">
          <div class="container-fluid">
             <div class="navbar-header">
@@ -45,7 +47,7 @@
             <h1>Persoon 1</h1>
             <div id="formcontainer">
             <form>
-              <div class="form-inline">
+              <div class="form-inline namen" >
                   <label for="exampleInputEmail1">Voornaam:</label>
                   <input type="text" class="form-control" id="firstName1" >
                   <label for="exampleInputPassword1">Achternaam:</label>
@@ -70,6 +72,9 @@
               <br>
                <label for="sel1" class="question">Zoekt u een sportieve partner?</label>
                
+              <br>
+               <label for="sel1" class="question">Wat is uw leeftijd?</label>
+                 
               </div>
               <div id="answers">
                   <select class="form-control answer" id="Kinderen1" style="width: 80px;">
@@ -97,6 +102,7 @@
                   <option>Liever wel</option>
                   <option>Maakt niet uit</option>
                </select>
+               <input type="number" id="leeftijd" class="form-control">
               </div>
             </form>
             <br>
