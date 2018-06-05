@@ -31,5 +31,5 @@ for(i = 0; i < scores.length ;i++){
    plek = i;
   }
 }  
-  document.getElementById("output") = kandidaten[plek].naam;
+  document.getElementById("output").innerHTML = kandidaten[plek].naam;
 }
