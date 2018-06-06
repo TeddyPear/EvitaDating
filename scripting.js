@@ -26,10 +26,8 @@ var zelf = new persoon(
   document.getElementById("andersport").value
   );
   
-kandidaten.push(new persoon("henk","Ja",20,"Ja","Maakt niet uit","Man","Vrouw","Cruise","Nee","Maakt niet uit"));
-kandidaten.push(new persoon("Jan","Nee", 19,"Ja","Liever wel","Man","Man","Strandvakantie","Nee","Maakt niet uit"));
-kandidaten.push(new persoon("Eva","Ja",22,"Nee","Liever wel","Vrouw","Maakt niet uit","Trektochten","Ja","Ja"));
-kandidaten.push(new persoon("Julie","Nee",23,"Nee","Maakt niet uit","Vrouw","Man","Cruise","Nee","Ja"));
+kandidaten.push(new persoon("Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Ja","Maakt niet uit"));
+kandidaten.push(new persoon("Juliet Jansen","Ja",22 ,"Ja","Maakt niet uit","Vrouw","Man","Ja","Liever wel"));  
   
 var scores = [];
   
@@ -46,7 +44,7 @@ for(i = 0; i < kandidaten.length;i++){
   if((kandidaten[i].anderorg == "Maakt niet uit" )||(zelf.zelforg == "Ja")){
      punten += 4;
   }
-    if((zelf.voorkeur == "Maakt niet uit"|| zelf.voorkeur == kandidaten[i].geslacht)&&( zelf.geslacht == kandidaten[i].voorkeur ||kandidaten[i].voorkeur == "Maakt niet uit")){
+    if((zelf.voorkeur == "Maakt niet uit" || zelf.voorkeur == kandidaten[i].geslacht)&&( zelf.geslacht == kandidaten[i].voorkeur ||kandidaten[i].voorkeur == "Maakt niet uit")){
      punten += 1000; 
   }
   
@@ -72,5 +70,5 @@ for(i = 0; i < scores.length ;i++){
   }
   
 }  
-  document.getElementById("output").innerHTML = "Je matcht met: " + kandidaten[plek].naam + "!";
+  document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!";
 }
