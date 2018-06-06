@@ -1,7 +1,12 @@
 body{
   background-color: #ffdde5;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 .jumbotron {
   background-image: url("http://www.loveimagesdownload.com/wp-content/uploads/2016/08/Love-Images-6.jpg");
   height: 300px;
@@ -64,13 +69,13 @@ p {
 .answer {
  height: 34px;
  margin-bottom: 3px;
+  width: 140px;
 }
 
 #formcontainer {
   background-color: #ffc5ce;
   height: 500px;
 }
-
 
 
 
