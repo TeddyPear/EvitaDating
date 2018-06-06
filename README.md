@@ -1,3 +1,3 @@
 # EvitaDating
 School project 
-For dating site
+Generator for javascript profiles for easy use
