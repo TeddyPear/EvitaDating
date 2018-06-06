@@ -28,7 +28,9 @@ var zelf = new persoon(
   
 kandidaten.push(new persoon("Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Ja","Maakt niet uit"));
 kandidaten.push(new persoon("Juliet Jansen","Ja",22 ,"Ja","Maakt niet uit","Vrouw","Man","Ja","Liever wel"));  
-  
+kandidaten.push(new persoon("Klaas Kaas","Ja",34 ,"Ja","Liever wel","Man","Man","Nee","Maakt niet uit"));
+
+
 var scores = [];
   
 for(i = 0; i < kandidaten.length;i++){
