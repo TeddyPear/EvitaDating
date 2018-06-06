@@ -72,5 +72,5 @@ for(i = 0; i < scores.length ;i++){
   }
   
 }  
-  document.getElementById("output").innerHTML = kandidaten[plek].naam;
+  document.getElementById("output").innerHTML = "Je matcht met: " + kandidaten[plek].naam + "!";
 }
