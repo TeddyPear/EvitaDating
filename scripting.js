@@ -1,3 +1,20 @@
+var myDat = firebase.database();
+
+function createNewPerson(id,naam, kinderen, leeftijd, zelforg, anderorg,geslacht ,voorkeur,vakantie,zelfsport,andersport){
+  myDat().ref('users/' + id).set({
+   naam: naam,
+   kinderen: kinderen,
+   leeftijd: leeftijd,
+   zelforg: zelforg,
+   anderorg: anderorg,
+   geslacht: geslacht,
+   voorkeur: voorkeur,
+   vakantie: vakantie,
+   zelfsport: zelfsport,
+   andersport: andersport
+  });
+}
+myDat.child("text").set("some value");
 function myFunction() {
   function persoon(naam, kinderen, leeftijd, zelforg, anderorg,geslacht ,voorkeur,vakantie,zelfsport,andersport){
     this.naam = naam;
