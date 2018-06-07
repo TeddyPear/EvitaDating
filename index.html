@@ -11,7 +11,20 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </head>
-   <body>
+   <body>    
+   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+   <script>
+     // Initialize Firebase
+   var config = {
+      apiKey: "AIzaSyAAwYfpwiH41s_547LbfALz8gd8NrwjfLg",
+      authDomain: "evita-dating.firebaseapp.com",
+      databaseURL: "https://evita-dating.firebaseio.com",
+      projectId: "evita-dating",
+      storageBucket: "evita-dating.appspot.com",
+      messagingSenderId: "199943267747"
+    };
+    firebase.initializeApp(config);
+   </script>
    <script src="scripting.js"></script>
       <nav class="navbar navbar-default">
          <div class="container-fluid">
