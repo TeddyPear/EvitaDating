@@ -1,7 +1,7 @@
 var myDat = firebase.database();
 
 function createNewPerson(id,naam, kinderen, leeftijd, zelforg, anderorg,geslacht ,voorkeur,vakantie,zelfsport,andersport){
-  myDat().ref('users/' + id).set({
+  myDat.ref('users/' + id).set({
    naam: naam,
    kinderen: kinderen,
    leeftijd: leeftijd,
@@ -14,8 +14,16 @@ function createNewPerson(id,naam, kinderen, leeftijd, zelforg, anderorg,geslacht
    andersport: andersport
   });
 }
-myDat.child("text").set("some value");
+function myFunc(id,naam){myDat.ref("User/"+ id).set({naam: naam, twee: "test3"});}
 function myFunction() {
+ /* public function createNewPerson(id,naam){
+	myDat.ref('users/' + id).set({
+   naam: "naam",
+  });
+}*/
+  
+ //myDat.ref('users/0').set({naam:"werkt"});
+
   function persoon(naam, kinderen, leeftijd, zelforg, anderorg,geslacht ,voorkeur,vakantie,zelfsport,andersport){
     this.naam = naam;
     this.kinderen = kinderen;
@@ -43,9 +51,9 @@ var zelf = new persoon(
   document.getElementById("andersport").value
   );
   
-kandidaten.push(new persoon("Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Ja","Maakt niet uit"));
-kandidaten.push(new persoon("Juliet Jansen","Ja",22 ,"Ja","Maakt niet uit","Vrouw","Man","Ja","Liever wel"));  
-kandidaten.push(new persoon("Klaas Kaas","Ja",34 ,"Ja","Liever wel","Man","Man","Nee","Maakt niet uit"));
+kandidaten.push(new persoon("Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Strandvakantie","Ja","Maakt niet uit"));
+kandidaten.push(new persoon("Juliet Jansen","Ja",22 ,"Ja","Maakt niet uit","Vrouw","Man","Cruise","Ja","Liever wel"));  
+kandidaten.push(new persoon("Klaas Kaas","Ja",34 ,"Ja","Liever wel","Man","Man","Nee","Trektochten" ,"Maakt niet uit"));
 
 
 var scores = [];
@@ -89,5 +97,8 @@ for(i = 0; i < scores.length ;i++){
   }
   
 }  
-  document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!";
+
+  createNewPerson("0","Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Trektochten","Ja","Maakt niet uit");
+  //document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!";
+  document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!"; 
 }
