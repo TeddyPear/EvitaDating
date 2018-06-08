@@ -53,8 +53,8 @@ var zelf = new persoon(
   
 kandidaten.push(new persoon("Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Strandvakantie","Ja","Maakt niet uit"));
 kandidaten.push(new persoon("Juliet Jansen","Ja",22 ,"Ja","Maakt niet uit","Vrouw","Man","Cruise","Ja","Liever wel"));  
-kandidaten.push(new persoon("Klaas Kaas","Ja",34 ,"Ja","Liever wel","Man","Man","Trektochten" ,"Nee","Maakt niet uit"));
-kandidaten.push(new persoon("lyla van soest","Ja",17 ,"Ja","Liever wel","Vrouw","Man","Strandvakantie","Ja","Liever wel"));
+kandidaten.push(new persoon("Klaas Kaas","Ja",34 ,"Ja","Liever wel","Man","Man","Nee","Trektochten" ,"Maakt niet uit"));
+
 
 var scores = [];
   
@@ -98,7 +98,7 @@ for(i = 0; i < scores.length ;i++){
   
 }  
 
-  createNewPerson("0","Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Trektochten","Ja","Maakt niet uit");
+  createNewPerson("1","Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Trektochten","Ja","Maakt niet uit");
   //document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!";
   document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!"; 
 }
