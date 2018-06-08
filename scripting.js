@@ -103,8 +103,8 @@ for(i = 0; i < scores.length ;i++){
   document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!"; 
 }
 function addMe(){
-addNewPerson(
-	self.naam, self.kinderen, self.leeftijd ,self.zelforg,zelf.anderorg,zelf.geslacht,zelf.voorkeur,zelf.vakantie,zelf.zelfsport,zelf.andersport
+createNewPerson(
+	id, self.naam, self.kinderen, self.leeftijd ,self.zelforg,zelf.anderorg,zelf.geslacht,zelf.voorkeur,zelf.vakantie,zelf.zelfsport,zelf.andersport
 );
 
 
