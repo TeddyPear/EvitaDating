@@ -98,7 +98,14 @@ for(i = 0; i < scores.length ;i++){
   
 }  
 
-  createNewPerson("1","Piet Papier","Ja",23 ,"Nee","Maakt niet uit","Man","Vrouw","Trektochten","Ja","Maakt niet uit");
+  
   //document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!";
   document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + kandidaten[plek].naam + "!"; 
+}
+function addMe(){
+addNewPerson(
+	
+);
+
+
 }
