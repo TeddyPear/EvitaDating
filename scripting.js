@@ -104,7 +104,7 @@ for(i = 0; i < scores.length ;i++){
 }
 function addMe(){
 createNewPerson(
-	id, self.naam, self.kinderen, self.leeftijd ,self.zelforg,zelf.anderorg,zelf.geslacht,zelf.voorkeur,zelf.vakantie,zelf.zelfsport,zelf.andersport
+	"69", self.naam, self.kinderen, self.leeftijd ,self.zelforg,zelf.anderorg,zelf.geslacht,zelf.voorkeur,zelf.vakantie,zelf.zelfsport,zelf.andersport
 );
 
 
