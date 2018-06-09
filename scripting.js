@@ -82,13 +82,13 @@ var zelf = new persoon(
 
 var scores = [];
 var namen = [];
-console.log(kandidaten.length);
-console.log(kandidaten);
-////alert(kandidaten.length);
+//console.log(kandidaten.length);
+//console.log(kandidaten);
+//alert(kandidaten.length);
 
 for(i = 0; i < kandidaten.length;i++){
   var punten = 0;
-  ////alert("tussencheck");
+  //alert("tussencheck");
   if(zelf.kinderen == kandidaten[i].kinderen){
     punten += 12;
   }
@@ -128,16 +128,39 @@ for(i = 0; i < scores.length ;i++){
   
 }  
 
+  var geslacht = "Hij";
+  var org = "georganiseerd";
+  var sportief = "niet";
+  var vakantie = "gaat het liefst naar een strand";
+  var kind = "geen";
+  
+  if (kandidaten[plek].geslacht == "Man"){geslacht = "Hij";}else{geslacht ="Zij";}
+  if (kandidaten[plek].zelforg == "Ja"){org = "";}else{org="niet zo ";}
+  if (kandidaten[plek].zelfsport == "Ja"){sportief = "";}else{sportief =" niet";}
+  if (kandidaten[plek].vakantie == "Strandvakantie"){vakantie = "ligt het liefst op een strand";}else if(kandidaten[plek].vakantie == "Cruise"){vakantie ="vermaakt zich het liefst op een cruiseschip";}else{vakantie="maakt het liefst trektochten";}
+  if(kandidaten[plek].kinderen == "Ja"){kind = "graag";}else{kind = "geen"}
 
+
+
+  console.log(kandidaten);
+  document.getElementById("partner").style.height = "686px";
+  document.getElementById("resultaat").innerHTML = "Jouw partner is: "+ namen[plek];
   document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + namen[plek] + "!"; 
+  document.getElementById("gegevens").innerHTML =  geslacht + " is " + org +"georganiseerd en " + "sport"+ sportief +" veel. "+ geslacht + " " + vakantie + " tijdens een vakantie.  Daarnaast wil "+ geslacht.toLowerCase() + " " + kind + " kinderen."  ; 
 }
+
+
+
+
+
+
 function addMe(){
 	
 
 	
 createNewPerson(
-	document.getElementById("firstName1").value + " " + document.getElementById("lastName1").value, 
-	 document.getElementById("firstName1").value + " " + document.getElementById("lastName1").value,
+  document.getElementById("firstName1").value + " " + document.getElementById("lastName1").value, 
+  document.getElementById("firstName1").value + " " + document.getElementById("lastName1").value,
   document.getElementById("Kinderen1").value,
   document.getElementById("leeftijd").value,
   document.getElementById("zelfOrg1").value,
