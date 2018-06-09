@@ -88,3 +88,7 @@ p {
 #gegevens{
 	font-size: 25px;
 }
+.page-footer{
+	margin-top: 15px;
+	background-color: #fcabab;
+}
