@@ -77,9 +77,14 @@ p {
   height: 450px;
   padding: 15px;
   padding-bottom: 0px;
+  min-width: 750px;
 }
 .col-sm-4 {
 	background-color: #ffb5bb;
 	height: 638px;
 	margin-top: 5px;
+}
+
+#gegevens{
+	font-size: 25px;
 }
