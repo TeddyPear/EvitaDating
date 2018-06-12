@@ -144,6 +144,7 @@ for(i = 0; i < scores.length ;i++){
 
   console.log(kandidaten[plek].kinderen);
   document.getElementById("partner").style.height = "686px";
+  document.getElementById("twitterding").style.height = "686px";
   document.getElementById("resultaat").innerHTML = "Jouw partner is: "+ namen[plek];
   document.getElementById("output").innerHTML = "Je matcht voor " + (Math.round(Math.abs(max - 1000)/ 0.40)) + "% met: " + namen[plek] + "!"; 
   document.getElementById("gegevens").innerHTML =  geslacht + " is " + org +"georganiseerd en " + "sport"+ sportief +" veel. "+ geslacht + " " + vakantie + " tijdens een vakantie.  Daarnaast wil "+ geslacht.toLowerCase() + " " + kind + " kinderen."  ; 
